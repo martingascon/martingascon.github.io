@@ -35,34 +35,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     
     <script type="text/javascript">
-    $(document).ready(function(){
-        $('[rel="popover"]').popover('toggle', { placement : 'right', trigger : 'hover', html : true, 
-      content: function() {return $('#popover_content_wrapper').html();} });
-    });
-        
-   $(document).ready(function() {
-
-	$('.simple-ajax-popup-align-top').magnificPopup({
-		type: 'ajax',
-		alignTop: true,
-		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
-	});
-
-	$('.simple-ajax-popup').magnificPopup({
-		type: 'ajax'
-	});
-	
-   });     
-        
-        
-        
-        
-        
+         $(function(){
+            $('[data-toggle=popover]:not([data-popover-content])').popover();
+            $('[data-toggle=popover][data-popover-content]').popover({
+                html : true,
+                content: function() {
+                  var content = $(this).attr("data-popover-content");
+                  return $(content).children(".popover-body").html();
+                },
+                title: function() {
+                  var title = $(this).attr("data-popover-content");
+                  return $(title).children(".popover-heading").html();
+                }
+            });
+        });
    </script>   
     
     
     <style>
-    .popover{max-width: 100%; width: <width>;}
+        .popover {border: 2px; min-width: 1000px; max-width: 100%;}   
     </style>
     
 </head>
@@ -147,33 +138,14 @@
         </div>
         <div class="container">
             <div class="row">
-                <a class="simple-ajax-popup" href="education.html">Load another content via ajax</a>
-                <a href="#" rel="popover" title="Education" data-content=''>
+                
                 <div  class="col-lg-3 col-md-6 text-center">
                    <div class="service-box">
-                        <i class="fa fa-4x fa-mortar-board text-primary sr-icons"></i>
-                        <h3>Education</h3>
+                        <i class="fa fa-4x fa-mortar-board text-primary sr-icons"></i>                          <h3><a class="" data-placement="right" data-popover-content="#a1" data-toggle="popover" data-trigger="focus" tabindex="0" >Education</a></h3>
                         <p class="text-muted">What was my passion then</p>
                     </div>
                 </div>
-                </a>
-                  <div id="popover_content_wrapper" style="display: none">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 text-right">
-                                <img style="display: block; margin-left: auto; margin-right: auto;" src="img/USC.jpg" alt=""><br><br>
-                                <img style="display: block; margin-left: auto; margin-right: auto;" src="img/UZ.jpg" alt="">
-                            </div>
-                            <div class="col-lg-9 col-md-9">
-                                <h4><b>PhD, Nuclear Physics</b></h4> <h4 class="pull-right">  2006 – 2010 </h4><p>Thesis: Prototype of a new calorimeter for the studies of <br>nuclear reactions with relativistic radioactive beams (awarded summa cum laude)</p><hr>
-                                <h4><b>Diploma of Avanced Studies</b></h4><h4 class="pull-right">   2006 – 2007</h4><p>Thesis:  The use of avalanche photodiodes in gamma-calorimetry</p><hr>
-                                <h4><b>B.S / M. S. in Physics</b></h4> <h4 class="pull-right"> 2000 – 2005</h4><p>Thesis: Gamma spectroscopy using CsI crystals and photomultipliers</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-                
-                <a href="#" data-toggle="popover" title="Education" data-content=''>     
+               
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-briefcase text-primary sr-icons"></i>
@@ -181,7 +153,6 @@
                         <p class="text-muted">My present and past work life</p>
                     </div>
                 </div>
-                </a>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-bar-chart-o text-primary sr-icons"></i>
@@ -229,7 +200,22 @@
                     </div>
                 </div>
                 
-                
+               <div class="hidden" id="a1" >
+                    <div class="popover-heading">Education</div>  
+                    <div class="popover-body">    
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 text-right">
+                                <img style="display: block; margin-left: auto; margin-right: auto;" src="img/USC.jpg" alt=""><br><br>
+                                <img style="display: block; margin-left: auto; margin-right: auto;" src="img/UZ.jpg" alt="">
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <h4><b>PhD, Nuclear Physics</b></h4> <h4 class="pull-right">  2006 – 2010 </h4><p>Thesis: Prototype of a new calorimeter for the studies of <br>nuclear reactions with relativistic radioactive beams (awarded summa cum laude)</p><hr>
+                                <h4><b>Diploma of Avanced Studies</b></h4><h4 class="pull-right">   2006 – 2007</h4><p>Thesis:  The use of avalanche photodiodes in gamma-calorimetry</p><hr>
+                                <h4><b>B.S / M. S. in Physics</b></h4> <h4 class="pull-right"> 2000 – 2005</h4><p>Thesis: Gamma spectroscopy using CsI crystals and photomultipliers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
                 
             </div>
         </div>
