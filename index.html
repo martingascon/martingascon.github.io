@@ -39,6 +39,7 @@
             $('[data-toggle=popover]:not([data-popover-content])').popover();
             $('[data-toggle=popover][data-popover-content]').popover({
                 html : true,
+                
                 content: function() {
                   var content = $(this).attr("data-popover-content");
                   return $(content).children(".popover-body").html();
@@ -46,11 +47,11 @@
                 title: function() {
                   var title = $(this).attr("data-popover-content");
                   return $(title).children(".popover-heading").html();
-                }
+                },
             });
         });
    </script>   
-    
+     
     
     <style>
         .popover {border: 2px; min-width: 1000px; max-width: 100%;}   
@@ -162,7 +163,7 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>My Hobbies</h3>
+                        <h3><a class="" data-placement="left" data-popover-content="#a4" data-toggle="popover" data-trigger="focus" tabindex="0">My Hobbies</a></h3>
                         <p class="text-muted">Traveling, Photography, Computers, Guitar, and Billiards.</p>
                     </div>
                 </div>
@@ -184,7 +185,7 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-sign-language text-primary sr-icons"></i>
-                        <h3>Volunteering</h3>
+                        <h3><a class="" data-placement="bottom" data-popover-content="#a7" data-toggle="popover" data-trigger="focus" tabindex="0">Volunteering</a></h3>
                         <p class="text-muted">My extra curricular activities.</p>
                     </div>
                 </div>
@@ -360,6 +361,148 @@
                         
                     </div>
                 </div>
+               <div class="hidden" id="a4">
+                    <div class="popover-heading">My Hobbies</div>  
+                    <div class="popover-body">
+                        <!--BILLIARDS-->
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 text-left">
+                                <p>I have many hobbies, among them are traveling, photography, computing, guitar, and billiards. Here, you will see sample of them.</p><br>
+
+                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Billiards</b></h4></div><br>            
+                                
+                            </div>
+                            <div class="col-lg-6 col-md-6 text-right">
+                                <p>I discovered billards by chance when I was working on my PhD but it quickly grew to be my favorite hobby. My knowledge of classical mechanics was useful in predicting where the ball was going to end up. I started playing regularly and obtained a decent record of achievements.</p>   
+                            </div>
+                           
+                            <div class="col-lg-6 col-md-6 text-left">
+                                <img style="float: left;" src="images/img_1953-1.jpg" alt="Billiards" width="356" height="267">
+                            </div>
+                            
+                            <div class="col-lg-12 col-md-12 text-left">
+                                <hr>
+                                <h4><strong>Achievements</strong></h4><br>
+                            </div>
+                            <div class="col-lg-6 col-md-6 text-right">
+                              <img style="display: block;" src="images/IMG_20150323_201201910-X3.jpg" alt="" width="400" height="193">
+                            </div>    
+                            <div class="col-lg-3 col-md-3 text-left">   
+                              <img style="float: left;" src="images/9ball_MVP.jpg" alt="" width="149" height="199">
+                              
+                            </div>
+                            <div class="col-lg-3 col-md-3 text-left">   
+                               <img style="float: left;" src="images/IMG_20150401_214423298-X2.jpg" alt="" width="196" height="199"> 
+                            </div>
+                            <div class="col-lg-6 col-md-6 text-left">   
+                                <h3>2008</h3>
+                                <ul>
+                                    <li><p>Local Tournament: 2th Position (out of 6)</p></li>
+                                    <li><p>Qualified forregional championship</p></li>
+                                    <li><p>Qualified to Single National Tournament. Benalmadena (Spain)</p></li>
+                                </ul>
+                                <h3>2009</h3>
+                                <ul>
+                                    <li><p>Local Tournament: 10th Position (out of 20)</p></li>
+                                    <li><p>Regional Tournament: 14th Position (out of 57)</p></li>
+                                </ul>
+                                <h3>2010</h3>
+                                <ul>
+                                    <li><p>Local Tournament: 2nd Position (out of 20)</p></li>
+                                    <li><p>Regional Tournament: 9th Position (out of 65)</p></li>
+                                    <li><p>Qualified to Nationals. Lugo 2010 (Spain)</p></li>
+                                </ul>
+                                <h3>2011</h3>
+                                <ul>
+                                    <li><p>8-Ball Team. 1st Place. Fall Session (Mountain View)</p></li>
+                                </ul>
+                                <h3>2012</h3>
+                                <ul>
+                                    <li><p>8-Ball Team. 2nd Place. Spring Session. (Mountain View)</p></li>
+                                    <li><p>8-Ball Team. 2nd Place. Summer Session.</p></li>
+                                    <li><p>8-Ball Regional Singles Qualifiers: 1st Place.</p></li>
+                                    <li><p>Qualified to play APA 8-ball National Singles Championship in Las Vegas (April 2012)</p></li>
+                                </ul>
+                                
+                            </div>
+                            <div class="col-lg-6 col-md-6 text-left">   
+                                <h3>2014</h3>
+                                <ul>
+                                    <li><p>9-Ball 1st. Place Top Gun Tournament. Fall Session (San Francisco)</p></li>
+                                    <li><p>8-Ball Team Division Team Champion. Summer Session</p></li>
+                                    <li><p>8-Ball Team Division Champions. Fall Session</p></li>
+                                    <li><p>9-Ball Team Division Champion. Fall Session</p></li>
+                                    <li><p>Qualfied for Fall 2014 9-Ball Tri-Cup</p></li>
+                                    <li><p>Qualified for Summer 2014 8-Ball Tri-Cup Tournament</p></li>
+                                    <li><p>Qualified for Spring 2014 8-Ball Tri Cup</p></li>
+                                   
+                                </ul>
+                                <h3>2015</h3>
+                                <ul>
+                                    <li><p>8-Ball Team Division Champions. Spring Session</p></li>
+                                    <li><p>Qualified for 2015 8-Ball City Championship (San Francisco)</p></li>
+                                    <li><p>Qualified for 2015 9-Ball City Championship</p></li>
+                                    <li><p>Qualified for Spring 2015 8-Ball Tri Cup (San Francisco)</p></li>
+                                    <li><p>Qualified for Spring 2015 9-Ball Tri Cup</p></li>
+                                </ul>
+                                <h3>2016</h3>
+                                <ul>
+                                    <li><p>8-Ball Team. 2nd Place. Summer Session.</p></li>
+                                </ul>
+                                
+                                
+                            </div>
+                            
+                        </div> 
+                        <!--PHOTOGRAPHY-->
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 text-left">
+                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Photography</b></h4></div><br>              	
+                            </div>    
+                            <div class="col-lg-6 col-md-6 text-right">            
+                                <p>Photography is a passion of mine, I like to photograph mostly nature and a little bit of science.</p>	
+                            </div>    
+                            <div class="col-lg-6 col-md-6 text-left">  
+                                <img src="images/IMG_0389.JPG" alt="" width="400" height="243">
+                            </div> 
+                           
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 text-left">
+                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Traveling</b></h4></div><br>                           
+                            </div>
+                            <div class="col-lg-6 col-md-6 text-right">                 
+                                <p>I love traveling. Since I left Argentina more than 20 years ago, I have visited more than 20 countries and have lived in Spain and Germany. For the last five years I have been residing in the United States.</p>                        
+                            </div>
+                            <div class="col-lg-6 col-md-6 text-left">  
+                               <img src="images/Amsterdam2.jpg" alt="" width="400" height="335">
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </div>
+               <div class="hidden" id="a7">
+                    <div class="popover-heading">Volunteering</div>  
+                    <div class="popover-body">
+        
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 text-left">
+                               <ul>
+                                    <li><p>Founding member of the Association for the Social Promotion of the Space Research and Development (APSIDE). <br><a href="http://sseti.unizar.es/web/nosotros.html" target="_blank">http://sseti.unizar.es/web/nosotros.html</a></p></li><br>
+                                    <li><p>Member of the Student Space Exploration &amp; Technology Initiative (SSeti) (European Space Agency). <br><a href="http://sseti.net/" target="_blank">http://sseti.net/</a></p></li><br>
+                                    <li><p>Founding member of the University Press ‘The Wall of Science’. 2001.</p></li><br>
+                                    <li><p>Educator of the scientific program for high-schools ‘The Circus of Science’. 2001-2004.</p></li><br>
+                                    <li><p>Educator of the Universitary Program “Informatic Tools for Professors and Students”. 2001-2003</p></li>
+                                </ul>
+                            </div>  
+                        </div> 
+                        
+                    
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -373,7 +516,7 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Data Science
+                                    Data Science Contributions
                                 </div>
                                 <div class="project-name">
                                     INGRID
@@ -383,15 +526,15 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                    <a href="images/Travel/Amsterdam2.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Hobby
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Travel
                                 </div>
                             </div>
                         </div>
