@@ -126,7 +126,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-12">
                         <h2 class="section-heading">In short!</h2>
                         <hr class="light">
-                        <p class="text-faded">Intertek</strong>, Power Group<br><strong>Data Scientist</strong></p>
+                        <p class="text-faded">Intertek, Power Group<br><strong>Data Scientist</strong></p>
                         <p class="text-faded"><strong>Berkeley National Laboratory</strong><br>Life Sciences Division<br>Research Physicist</p>
                         <p class="text-faded"><strong>Stanford University</strong><br>Material Science &amp; Engineering<br> Postdoctoral Fellow</p>  
                         <p class="text-faded">USC, Spain<br> <strong>PhD Experimental Nuclear Physics</strong></p>  
@@ -480,7 +480,86 @@
                                 <p>Photography is a passion of mine, I like to photograph mostly nature and a little bit of science.</p>	
                             </div>    
                             <div class="col-lg-6 col-md-6 text-left">  
-                                <img src="images/IMG_0389.JPG" alt="" width="400" height="243">
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000" id="bs-carousel">
+                                <!-- Overlay -->
+                                <div class="overlay"></div>
+
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                                </ol>
+	
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="images/photo/IMG_0389.JPG" alt="photo">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/photo/IMG_2532.JPG" alt="photo">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/photo/Dresden-114.jpg" alt="photo">
+                                    </div> 
+                                    <div class="item">
+                                        <img src="images/photo/IMG_2895.JPG" alt="photo">
+                                    </div> 
+                                    <div class="item">
+                                        <img src="images/photo/img_4603.jpg" alt="photo">
+                                    </div> 
+                                    <div class="item">
+                                        <img src="images/photo/img_4605.jpg" alt="photo">
+                                    </div> 
+                                    <div class="item">
+                                        <img src="images/photo/img_4610.jpg" alt="photo">
+                                    </div>
+            
+                                    <!--<div class="item">
+                                        <img src="../static/img/carousel/Map_search.png" alt="Map_search">
+                                        <div class="carousel-caption">
+                                            <hgroup>
+                                            <h1>INGRID</h1>
+                                            <h3> is an integrated solution that allows </h3>
+                                            <h3> power generation stakeholders to </h3>
+                                            <h3> efficiently analyze very large </h3>
+                                            <h3> power generation performance datasets </h3>
+                                            <br><br><br>
+                                            </hgroup>
+                                        </div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <img src="../static/img/carousel/Data_output_bw.png" alt="Data Output">
+                                        <div class="carousel-caption">
+                                            <hgroup>
+                                            <h3> The cloud based platform provides </h3>
+                                            <h3> accurate information and has an easy-to-use </h3>
+                                            <h3> query tool with interactive output grids </h3>
+                                            <h3> charting and mapping capabilities </h3>
+                                            <br><br><br><br>
+                                            </hgroup>
+                                        </div>
+                                    </div>-->
+                                    </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                </div>
+                                
+                                
+                                <!--<img src="images/IMG_0389.JPG" alt="" width="400" height="243">-->
                             </div> 
                            
                         </div>
@@ -582,13 +661,21 @@
                </div>
                 <!--PUBLICATIONS-->
                 <div class="hidden" id="a6">
-                    <div class="popover-heading">Publications, Conferences, PhD </div>  
+                    <div class="popover-heading">Publications, Conferences, PhD </div>
                     <div class="popover-body">
                         <div class="row">
-                            <div class="col-lg-12 col-md-12 text-left">   
-                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Publications</b></h4></div><br>
+                             <div class="col-lg-12 col-md-12 text-left">
+                                <ul>
+                                    <li><a class="page-scroll" href="#pub"><p>Publications</p></a></li>
+                                    <li><a class="page-scroll" href="#con"><p>Conferences</p></a></li>
+                                    <li><a class="page-scroll" href="#phd"><p>PhD Thesis</p></a></li>
+                                 
+                                 </ul> 
                             </div>
                             <!--PUBLICATIONS-->
+                            <div a href="#pub" class="col-lg-12 col-md-12 text-left page-scroll">   
+                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Publications</b></h4></div><br>
+                            </div>
                             <div class="col-lg-12 col-md-12">
                                 <h2>2015</h2>
                                 <ul>
@@ -656,15 +743,162 @@
                                     <li><p>Design and simulation of a calorimeter/spectrometer for the R3B setup: the CALIFA BARREL.</p></li>
                                 </ul>
                             </div>
+                            <!--PUBLICATIONS-->
+                            <div class="col-lg-12 col-md-12 text-left">   
+                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Conferences</b></h4></div><br>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                            <ul>
+                                <li><p>12th International Conference on Inorganic Scintillators and their Applications </p></li>
+                                <p><strong>Berkeley, CA, USA. June 7-12, 2015</strong></p><br>
+                                <li><p>IEEE Nuclear Science Symposium and Medical Imaging Conf. (NSS/MIC 2014)</p></li>
+                                <p><strong>Seattle, Washington, USA. Nov 10-16, 2014</strong></p><br>
+                                <li><p>Symposium on Radiation Measurements and Applications (SORMA 14)</p></li>
+                                <p><strong>Ann Arbor, MI. USA. Jun 9-12, 2014</strong></p><br>
+                                <li><p>3rd. Annual Berkeley Lab Computing and Technology Event (LabTech 14) </p></li>
+                                <p><strong>Berkeley, CA. USA. Sept 10, 2014</strong></p><br>
+                                <li><p>2nd. Annual Berkeley Lab Computing and Technology Event (LabTech 13)</p></li>
+                                <p><strong>Berkeley, CA. USA. Oct 9, 2013</strong></p><br>
+                                <li><p>4th International Conference on Science in Society (2012)</p></li>
+                                <p><strong>Berkeley, CA, USA. Nov 15-17, 2012</strong></p><br>
+                                <li><p>8th Intern. Conf. on Lumines. Detectors and Transf. of Ionizing Radiation - LUMDETR12</p></li>
+                                <p><strong>Halle(Saale), Germany. Sep 10-14, 2012</strong></p><br>
+                                <li><p>7th Spanish Meeting on Nuclear Physics (EFN 2012)</p></li>
+                                <p><strong>La Rabida, Spain. Sept. 14-16, 2012</strong></p><br>
+                                <li><p>5th Annual ARI Grantees Conference (ARI 2012)</p></li>
+                                <p><strong>Leesburg, Virginia, USA. Jul 23-25, 2012</strong></p><br>
+                                <li><p>Symposium on Radiation Measurements and Applications (SORMAWest 12)</p></li>
+                                <p><strong>Oakland, CA. USA. May 14-17, 2012</strong></p><br>
+                                <li><p>33th Spanish Meeting of the Royal Physics Society (RSEF 2011)</p></li>
+                                <p><strong>Santander, Spain. Sept. 19-23, 2011</strong></p><br>
+                                <li><p>11th International Conference on Inorganic Scintillators and their Applications</p></li>
+                                <p><strong>Giessen, Germany. Sept. 12-16, 2011</strong></p><br>
+                                <li><p>4th Annual ARI Grantees Conference (ARI 2011)</p></li>
+                                <p><strong>Alexandria, Virginia, USA. Apr 25-28, 2011</strong></p><br>
+                                <li><p>IEEE Nuclear Science Symposium and Medical Imaging Conf. (NSS/MIC 2010)</p></li>
+                                <p><strong>Knoxville, Tennessee, USA. Oct 30-Nov 6, 2010</strong></p><br>
+                                <li><p>5th Spanish Meeting on Nuclear Physics (EFN 2010)</p></li>
+                                <p><strong>San Lorenzo del Escorial, Spain. Sept. 27-29, 2010</strong></p><br>
+                                <li><p>10th International Conference on Inorganic Scintillators and their Applications</p></li>
+                                <p><strong>Cheju island, South Korea. Jun 08-12, 2009</strong></p><br>
+                                <li><p>IEEE Nuclear Science Symposium and Medical Imaging Conf. (NSS/MIC 2008)</p></li>
+                                <p><strong>Dresden, Germany. Oct 19-25, 2008</strong></p><br>
+                                <li><p>3rd Spanish Meeting on Nuclear Physics (EFN 2008)</p></li>
+                                <p><strong>Santiago de Compostela, Spain. Sept. 17-19, 2008</strong></p><br>
+                                <li><p>Symposium on Radiation Measurements and Applications (SORMAWest 08)</p></li>
+                                <p><strong>Berkeley. CA, USA. Jun 02-06, 2008</strong></p><br>
+                                <li><p>9th International Conference on Inorganic Scintillators and their Applications</p></li>
+                                <p><strong>Wistom-Salem. NC, USA. Jun 04-08, 2007</strong></p><br>
+                                <li><p>13th Euroschool on Exotic Beams</p></li>
+                                <p><strong>Trento, Italy. Sept. 11-15, 2006</strong></p><br>
+                                <li><p>2th EuroTrans IP Training Course. Nuclear Data for Transmutation</p></li>
+                                <p><strong>Santiago de Compostela, Spain. Jun 07-10, 2006</strong></p><br>
+                                <li><p>54th International Astronautical Federation Congress (IAC 2003)</p></li>
+                                <p><strong>Bremen, Germany. Sept. 29-Oct 3, 2003</strong></p><br>
+                            </ul>
+                            </div>                     
+                            <!--PHD THESIS-->
+                            <div class="col-lg-12 col-md-12 text-left">   
+                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>PhD Thesis</b></h4></div><br>
+                            </div>
+                            <div class="col-lg-12 col-md-12 text-left"> 
+                            <table>
+                            <tbody>
+                            <tr>
+                            <td colspan="3" style="vertical-align: top;">
+                            <p>My PhD thesis was centered in the construction of a gamma-ray and light charged particles calorimeter detector for the study of nuclear reactions with radioactive beams at relativistic energies. The thesis involved the simulation, construction and testing of a prototype of 16 CsI(Tl) crystals coupled to avalanche photodiodes under high energy gammas and protons, which were carried out in different accelerator facilites in Sweden, Spain and Germany.</p>
+                            <hr>
+                            <h1>The prototype</h1>
+                                <p><img src="images/prototype1.png" alt="" width="255" height="178">
+                                <img src="images/prototype2.png" alt="" width="185" height="178"></p>
 
+<div class="wsb-element-image" style="text-align: left;" data-type="element">These pictures show the prototype I personally built from scratch</div>
+</td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">
+<div id="wsb-element-00000000-0000-0000-0000-000682465023" class="wsb-element-image" style="text-align: center;" data-type="element"><a href="http://igfae.usc.es/~genp/academic/tesis/PhD_martin.pdf" target="_blank"><img src="images/Thesis3.jpg" alt="" width="239" height="321"></a></div>
+<div class="wsb-element-image" style="text-align: center;" data-type="element"><span style="color: #000000; line-height: 1.5; background-color: rgba(0, 0, 0, 0);">Download &lt;<a href="http://igfae.usc.es/~genp/academic/tesis/PhD_martin.pdf" target="_blank">here</a>&gt;.</span></div>
+</td>
+</tr>
+<tr>
+<td colspan="5" style="vertical-align: top;"><hr>
+<h1>&nbsp;The simulation</h1>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;">
+<p>&nbsp;<img src="images/Simulation1.png" alt="" width="481" height="154"><br></p>
+<p><img src="images/Result.png" alt="" width="475" height="193"></p>
+</td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">
+<p><img src="images/simulation.png" alt="" width="328" height="193"></p>
+<p>&nbsp;</p>
+<p>The simulation made in Geant 4 showed the concordance of the obtained data with the experimental results.</p>
+</td>
+</tr>
+<tr>
+<td colspan="5" style="vertical-align: top;"><hr></td>
+</tr>
+<tr>
+<td style="vertical-align: top;">
+<h1>The gamma and proton beams tests</h1>
+</td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">&nbsp;</td>
+</tr>
+<tr>
+<td style="vertical-align: top;">&nbsp;<img src="images/exp1.jpg" alt="" width="545" height="202"></td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">&nbsp;<img src="images/exp2.jpg" alt="" width="251" height="200"></td>
+</tr>
+<tr>
+<td style="vertical-align: top;">The prototype was exposed to protons at 180 MeV at the Svedverg Laboratory in Uppsala (Sweden) (Left). Here, on the right, we are using 6.2 gamma rays from a Tandem accelerator in Madrid (Spain)</td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">&nbsp;</td>
+<td style="vertical-align: top;">
+<div id="wsb-element-00000000-0000-0000-0000-000682465602" data-type="element">In this case, we went up to 10 MeV gammas&nbsp;at the Neptun Facility at the Teschniche Unversitat&nbsp;in Darmstad (Germany).&nbsp;</div>
+<div data-type="element">&nbsp;</div>
+</td>
+</tr>
+<tr>
+<td colspan="5" style="vertical-align: top;"><hr></td>
+</tr>
+<tr>
+<td style="vertical-align: top;">
+<h1>The&nbsp;​analysis</h1>
+</td>
+<td colspan="4" style="vertical-align: top;">
+<h1>&nbsp;The final result</h1>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><img src="images/surprise.png" alt="" width="445" height="274" style="float: left;">&nbsp;</td>
+<td colspan="4" style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/final.png" alt="" width="357" height="279"></td>
+</tr>
+<tr>
+<td style="vertical-align: top;">The most interesting result was to discover that a thin layer of&nbsp;wrapping distorted the obtained simulated results with high energy protons for&nbsp;this prototype</td>
+<td colspan="4" style="vertical-align: top;">The final reconstruction of thousand of events in our crystals coincided with our estimations obtained in the simulation. The results were used a proof of concept to scale up the prototype into a larger calorimeter.</td>
+</tr>
+</tbody>
+</table> 
+                            </div>
+                            
+                        
                         </div>                       
                     </div>
                </div>
                 <!--VOLUNTEERING-->
                 <div class="hidden" id="a7">
                     <div class="popover-heading">Volunteering</div>  
-                    <div class="popover-body">
-        
+                    <div class="popover-body">        
                         <div class="row">
                             <div class="col-lg-12 col-md-12 text-left">
                                <ul>
@@ -672,8 +906,13 @@
                                     <li><p>Member of the Student Space Exploration &amp; Technology Initiative (SSeti) (European Space Agency). <br><a href="http://sseti.net/" target="_blank">http://sseti.net/</a></p></li><br>
                                     <li><p>Founding member of the University Press ‘The Wall of Science’. 2001.</p></li><br>
                                     <li><p>Educator of the scientific program for high-schools ‘The Circus of Science’. 2001-2004.</p></li><br>
-                                    <li><p>Educator of the Universitary Program “Informatic Tools for Professors and Students”. 2001-2003</p></li>
+                                    <li><p>Educator of the Universitary Program “Informatic Tools for Professors and Students”. 2001-2003</p></li><hr>
                                 </ul>
+                                <h4><strong>Peer Review-Publications Reviewer</strong></h4><br>
+                                <ul>
+                                    <li><p>IEEE Transactions on Nuclear Science.</p></li><br>
+                                    <li><p>Radiation Measurements.</p></li><br>
+                                </ul> 
                             </div>  
                         </div> 
                         
@@ -685,7 +924,6 @@
                 <div class="hidden" id="a8">
                     <div class="popover-heading">In Media</div>  
                     <div class="popover-body">
-        
                         <div class="row">
                             <div class="col-lg-12 col-md-12 text-left">
                                <table style="height: 1060px;" width="900">
@@ -694,10 +932,10 @@
                                     <td style="text-align: left; vertical-align: top;">
                                     <h2>ARGENTINOS ENTRE LAS ESTRELLAS.</h2>
                                     <p>Dos argentinos que trascienden: Martín Gascón, reciente doctorado en física nuclear, de Tandil hacia el mundo (pasó por España y va a Stanford) para estudiar las estrellas.</p>
-                                    <p><br>Ref:&nbsp;<a href="http://www.noticiasdelcosmos.com/2011/01/argentinos-entre-las-estrellas.html" target="_blank"> http://www.noticiasdelcosmos.com/2011/01/argentinos-entre-las-estrellas.html</a></p>
-                                    <p>&nbsp;</p>
-                                    &nbsp;</td>
-                                    <td style="text-align: left; vertical-align: top;">&nbsp;</td>
+                                    <p><br>Ref: <a href="http://www.noticiasdelcosmos.com/2011/01/argentinos-entre-las-estrellas.html" target="_blank"> http://www.noticiasdelcosmos.com/2011/01/argentinos-entre-las-estrellas.html</a></p>
+                                    <p> </p>
+                                     </td>
+                                    <td style="text-align: left; vertical-align: top;"> </td>
                                     <td style="text-align: left; vertical-align: top;">
                                     <h2><img style="float: right;" src="images/Estrellas.jpg" alt="" width="313" height="190"></h2>
                                     </td>
@@ -711,7 +949,7 @@
                                     <p>Martín Gascón se doctoró en Física Nuclear hace un mes en España. Y en febrero se desempeñara como investigador en la universidad Norteamericana de Stanford. De paso por Tandil, ,de donde se fue hace 15 años dialogo con la Vidriera sobre su pasión por la fisica, sus estudios en Europa y su futuro. Una mente brillante. De Tandil, por el mundo. </p>
                                     <h6>Newspaper: El Eco de Tandil.</h6>
                                     </td>
-                                    <td style="text-align: left; vertical-align: top;">&nbsp;</td>
+                                    <td style="text-align: left; vertical-align: top;"> </td>
                                     <td style="text-align: left; vertical-align: top;"><img style="float: right;" src="images/Eco1.jpg" alt="" width="377" height="224"></td>
                                     </tr>
                                     <tr>
@@ -724,9 +962,6 @@
                                
                             </div>  
                         </div> 
-                        
-                    
-                        
                     </div>
                 </div>
             </div>
