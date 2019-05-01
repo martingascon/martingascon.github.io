@@ -4,8 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="MartinGascon.com is a personal web-site. Here you will find parts of my life and details not even my closest friends know about me. Please, be welcomed to my little corner in the internet.">
     <meta name="author" content="">
     <meta name="keywords" content="Martin Gascon, Data Science, PhD, Intertek, Machine Learning, Linkedin">
@@ -13,13 +12,21 @@
     
     <title>Martin Gascon - Personal Website</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    
+    <!-- Font Awesome Icons -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Bootstrap Core CSS -->
+   <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    
+    
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+   <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
 
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -46,62 +53,39 @@
     </script>
 
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
-    <script type="text/javascript">
-         $(function(){
-            $('[data-toggle=popover]:not([data-popover-content])').popover();
-            $('[data-toggle=popover][data-popover-content]').popover({
-                html : true,
-                
-                content: function() {
-                  var content = $(this).attr("data-popover-content");
-                  return $(content).children(".popover-body").html();
-                },
-                title: function() {
-                  var title = $(this).attr("data-popover-content");
-                  return $(title).children(".popover-heading").html();
-                },
-            });
-             
-             
-        });
-   </script>   
-     
-    
-    <style>
-        .popover {border: 2px; min-width: 1000px; max-width: 100%;}   
-    </style>
     
 </head>
 
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Martin Gascon</a>
-            </div>
+    <!--<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container">
 
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">MARTIN GASCON</a>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#mypresent">What I do</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">Brief bio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#mypast">What I did</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+               <!-- <ul class="nav navbar-nav navbar-right">-->
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#mypresent">What I do</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">Brief bio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#mypast">What I did</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                      </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -109,145 +93,161 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">Welcome to my little corner</h1>
-                <hr>
-                <p>My name is Martín Gascón and I am a Data Scientist and former Nuclear Physicist with a passion for science and technology. </p>
-                <a href="#mypresent" class="btn btn-primary btn-xl page-scroll">What I do</a>
+    <!-- Masthead -->
+    <header class="masthead">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-10 align-self-end">
+              <h1 class="text-uppercase text-white font-weight-bold">Welcome to my little corner</h1>
+              <hr class="divider my-4">
             </div>
+            <div class="col-lg-8 align-self-baseline">
+              <p class="text-white-75 font-weight-light mb-5">My name is Martín Gascón and I am a Data Scientist and former Nuclear Physicist with a passion for science and technology.</p>
+              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">What I do</a>
+            </div>
+          </div>
         </div>
     </header>
-
-    <section class="bg-dark" id="mypresent">
-     <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 text-center"> 
-                    <br><br><br>
-                        <h2 class="section-heading">What I do</h2>
-                        <hr class="light">
-                        <p class="text-faded">
-                            I work as Data Scientist for Intertek, a multinational company with more than 40,000 employees worldwide.  Working for Intertek, I have developed a comprehensive energy database and created <a href="http://ingrid.intertek.com" target="_blank">INGRID</a> a web application with the largest database on power plant operations. I also analyzed large datasets for numerous energy projects including coal, gas and renewable energies and I have developed programs and algorithms to predict the impact of renewable energy on fossil fuel plants.</p>
-                        <p class="text-faded">
-                            As Data Scientist, I like the challenges of finding hidden correlations on large datasets. I enjoy exploring nature and its complicated ways expressing itself. I always thought there were simpler equations to explain complicated phenomena. I enjoy traveling, playing guitar, photography, and overall discovering how things work.</p>
-                        <br><br><br>
-                        <a href="#about" class="btn btn-primary btn-xl page-scroll">A brief Bio!</a>
-                        <br><br><br>
-                </div>
-         </div>
+  
+    <!-- About Section -->
+    <section class="page-section bg-dark" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">What I do</h2>
+          <hr class="divider light my-4">
+          <p class="text-white-50 mb-4"> I work as Data Scientist for Intertek, a multinational company with more than 40,000 employees worldwide.  Working for Intertek, I have developed a comprehensive energy database and created <a href="http://ingrid.intertek.com" target="_blank">INGRID</a> a web application with the largest database on power plant operations. I also analyzed large datasets for numerous energy projects including coal, gas and renewable energies and I have developed programs and algorithms to predict the impact of renewable energy on fossil fuel plants.</p>
+          <p class="text-white-50 mb-4"> As Data Scientist, I like the challenges of finding hidden correlations on large datasets. I enjoy exploring nature and its complicated ways expressing itself. I always thought there were simpler equations to explain complicated phenomena. I enjoy traveling, playing guitar, photography, and overall discovering how things work.</p>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#about">A brief Bio!</a>
         </div>
-    </section>
-
+      </div>
+    </div>
+  </section>
     
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">  
-                    <div class="col-lg-9 col-md-9 col-sm-12">    
-                        <h2 class="section-heading">A Brief Bio!</h2>
-                        <hr class="light">
-                        <p class="text-faded">
-                            This all started when I was 14 after reading "A Brief History of Time" by Stephen Hawking. Captivated and enlightened by this book, I started thinking about human beings and how they are able to explain their universe with such a great detail.</p>
-                        <p class="text-faded">
-                            Originally from Argentina, I got my PhD in Nuclear Physics in 2010. My PhD thesis was about detectors for the study of nuclear reactions with radioactive beams at relativistic energies.</p>
-                         <p class="text-faded">  
-                             As a postdoctoral scholar at Stanford University and Research Physicist at Berkeley National Laboratory, I developed radiation detectors for national security applications. I have attended more than 20 international conferences and published 40 articles in peer-review journals.</p>
-                        <p class="text-faded">
-                            Almost two years ago, I transitioned into Data Science. I believe, my background gives me an advantage on this task and find exciting the benefits that can be extracted from the almost unexplored world of big data.           
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                        <h2 class="section-heading">In short!</h2>
-                        <hr class="light">
-                        <p class="text-faded">Intertek, Power Group<br><strong>Data Scientist</strong></p>
-                        <p class="text-faded"><strong>Berkeley National Laboratory</strong><br>Research Physicist</p>
-                        <p class="text-faded"><strong>Stanford University</strong><br>Postdoctoral Fellow</p>  
-                        <p class="text-faded">USC, Spain<br> <strong>PhD Experimental Nuclear Physics</strong></p>  
-                        <p class="text-faded">U. Zaragoza, Spain<br> <strong>B.S./M.S. Physics</strong></p>  
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <a href="#mypast" class="page-scroll btn btn-default btn-xl sr-button">Not bored yet?</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="mypast">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Just in case you wonder</h2>
-                    <hr class="primary">
-                </div>
+    <section class="page-section bg-primary" id="mypresent">
+    <div class="container">
+      <div class="row justify-content-center">
+            <div class="col-lg-9 col-md-9 col-sm-12">    
+                <h2 class="section-heading">A Brief Bio!</h2>
+                <hr class="light">
+                <p class="text-faded">
+                    This all started when I was 14 after reading "A Brief History of Time" by Stephen Hawking. Captivated and enlightened by this book, I started thinking about human beings and how they are able to explain their universe with such a great detail.</p>
+                <p class="text-faded">
+                    Originally from Argentina, I got my PhD in Nuclear Physics in 2010. My PhD thesis was about detectors for the study of nuclear reactions with radioactive beams at relativistic energies.</p>
+                 <p class="text-faded">  
+                     As a postdoctoral scholar at Stanford University and Research Physicist at Berkeley National Laboratory, I developed radiation detectors for national security applications. I have attended more than 20 international conferences and published 40 articles in peer-review journals.</p>
+                <p class="text-faded">
+                    Almost two years ago, I transitioned into Data Science. I believe, my background gives me an advantage on this task and find exciting the benefits that can be extracted from the almost unexplored world of big data.           
+                </p>
             </div>
-        </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <h2 class="section-heading">In short!</h2>
+                <hr class="light">
+                <p class="text-faded">Intertek, Power Group<br><strong>Data Scientist</strong></p>
+                <p class="text-faded"><strong>Berkeley National Laboratory</strong><br>Research Physicist</p>
+                <p class="text-faded"><strong>Stanford University</strong><br>Postdoctoral Fellow</p>  
+                <p class="text-faded">USC, Spain<br> <strong>PhD Experimental Nuclear Physics</strong></p>  
+                <p class="text-faded">U. Zaragoza, Spain<br> <strong>B.S./M.S. Physics</strong></p>  
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <a class="btn btn-light btn-xl js-scroll-trigger" href="#about">Not Bored yet!</a>
+            </div>
+    </div>
+  </div>
+  </section>
+    
+
+
+    <section class="page-section" id="mypast">
         <div class="container">
-            <div class="row">
+           <h2 class="text-center mt-0">Just in case you wonder</h2>
+           <hr class="divider my-4">
+           <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
-                   <div class="service-box">
-                        <i class="fa fa-4x fa-mortar-board text-primary sr-icons"></i>                          
-                        <h3><a class="" data-placement="right" data-popover-content="#a1" data-toggle="popover" data-trigger="focus" tabindex="0" >Education</a></h3>
+                    <div class="mt-5">
+                    <i class="fa fa-4x fa-graduation-cap text-primary sr-icons"></i>
+                        <br><br>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#a1">Education</button>
+                        <br><br>
                         <p class="text-muted">What was my passion then</p>
-                    </div>
-                </div>         
+                    </div> 
+                </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
+                    <div class="mt-5">
                         <i class="fa fa-4x fa-briefcase text-primary sr-icons"></i>
-                        <h3><a class="" data-placement="bottom" data-popover-content="#a2" data-toggle="popover" data-trigger="focus" tabindex="0" >Experience</a></h3>
+                        <br><br>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#a2">Experience</button>
+                        <br><br>
                         <p class="text-muted">My present and past work life</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-bar-chart-o text-primary sr-icons"></i>
-                        <h3><a class="" data-placement="bottom" data-popover-content="#a3" data-toggle="popover" data-trigger="focus" tabindex="0" >Data Science</a></h3>
-                        <p class="text-muted">My new life: Data Science Projects</p>
+                    <div class="mt-5">
+                        <i class="fa fa-4x fa-newspaper text-primary sr-icons"></i>
+                        <br><br>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#a3">Data Science</button>
+                        <br><br>
+                        <p class="text-muted">Data Science Projects</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
+                    <div class="mt-5">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3><a class="" data-placement="left" data-popover-content="#a4" data-toggle="popover" data-trigger="focus" tabindex="0">Hobbies</a></h3>
+                         <br><br>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#a4">Hobbies</button>
+                        <br><br>
                         <p class="text-muted">Traveling, Photography, Computers, Guitar, and Billiards.</p>
                     </div>
                 </div>
-                
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
+                    <div class="mt-5">
                         <i class="fa fa-4x fa-trophy text-primary sr-icons"></i>
-                        <h3><a class="" data-placement="right" data-popover-content="#a5" data-toggle="popover" data-trigger="focus" tabindex="0">Teaching, Honors and Awards</a></h3>
+                        <br><br>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#a5">Teaching, Honors and Awards</button>
+                        <br><br>
                         <p class="text-muted">A few extra things for my resume.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
+                    <div class="mt-5">
                         <i class="fa fa-4x fa-book text-primary sr-icons"></i>
-                        <h3><a class="" data-placement="bottom" data-popover-content="#a6" data-toggle="popover" data-trigger="focus" tabindex="0">Publications<br>Conferences<br>PhD Thesis</a></h3>
+                        <br><br>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#a6">Publications<br>Conferences<br>PhD Thesis</button>
+                        <br><br>
                         <p class="text-muted">What I left on paper.</p>
                     </div>
                 </div>  
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
+                    <div class="mt-5">
                         <i class="fa fa-4x fa-sign-language text-primary sr-icons"></i>
-                        <h3><a class="" data-placement="bottom" data-popover-content="#a7" data-toggle="popover" data-trigger="focus" tabindex="0">Volunteering</a></h3>
+                        <br><br>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#a7">Volunteering</button>
+                        <br><br>
                         <p class="text-muted">My extra curricular activities.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3><a class="" data-placement="left" data-popover-content="#a8" data-toggle="popover" data-trigger="focus" tabindex="0">In Media</a></h3>
+                    <div class="mt-5">
+                        <i class="fa fa-4x fa-newspaper text-primary sr-icons"></i>
+                        <br><br>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#a8">In Media</button>
+                        <br><br>
                         <p class="text-muted">What was written on paper.</p>
                     </div>
                 </div>
                 
+               
                 <!--EDUCATION-->
-                <div class="hidden" id="a1">
-                    <div class="popover-heading">Education</div>  
-                    <div class="popover-body">    
-                        <div class="row">
+                <div id="a1" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times; </button>
+                        <h4 class="modal-title">Education</h4>
+                      </div>
+                      <div class="modal-body">
+                      <div class="row">
                             <div class="col-lg-3 col-md-3 text-right">
                                 <img style="display: block; margin-left: auto; margin-right: auto;" src="images/USC.jpg" alt=""><br><br>
                                 <img style="display: block; margin-left: auto; margin-right: auto;" src="images/UZ.jpg" alt="">
@@ -258,365 +258,410 @@
                                 <h4><b>B.S / M. S. in Physics</b></h4> <h4 class="pull-right"> 2000 – 2005</h4><p>Thesis: Gamma spectroscopy using CsI crystals and photomultipliers</p>
                             </div>
                         </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
                     </div>
-                </div>    
+                  </div>
+                </div>
+
                 <!--EXPERIENCE-->
-                <div class="hidden" id="a2">
-                    <div class="popover-heading">Experience</div>  
-                    <div class="popover-body">    
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 text-right">
-                                <img style="display: block; margin-left: auto; margin-right: auto;" src="images/intertek_logo.png" alt="Intertek" width="130" height="102">
+                <div id="a2" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times; </button>
+                                <h4 class="modal-title">Experience</h4>
                             </div>
-                            <div class="col-lg-9 col-md-9">
-                                <h4><b> Data Scientist</b> <span class="pull-right"> June 2016 – Present</span></h4><h4><a href="http://www.intertek.com/" target="_blank">Intertek</a></h4>
-                                <h4>Santa Clara, CA </h4>
+                            <div class="modal-body">
+  
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 text-right">
+                                        <img style="display: block; margin-left: auto; margin-right: auto;" src="images/intertek_logo.png" alt="Intertek" width="130" height="102">
+                                    </div>
+                                    <div class="col-lg-9 col-md-9">
+                                        <h4><b> Data Scientist</b> <span class="pull-right"> June 2016 – Present</span></h4><h4><a href="http://www.intertek.com/" target="_blank">Intertek</a></h4>
+                                        <h4>Santa Clara, CA </h4>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12"><br>
+                                    <ul>
+                                        <li>Developed a comprehensive energy database for Intertek and created a web application with an accessible interface that allows access to the data.</li>
+                                        <li>Analyzed large data sets for numerous energy projects including coal, gas and renewable energies.</li>
+                                        <li>Developed programs and algorithms that will help make predictions about the impact of renewable energy on fossil fuel plants.</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 text-right">
+                                        <img style="display: block; margin-left: auto; margin-right: auto;" src="images/insight_logo.png" alt="Insight" width="130" height="70">
+                                    </div>
+                                    <div class="col-lg-9 col-md-9">
+                                    <h4><b>Insight Data Science Fellow</b><span class="pull-right">Jan. 2016 – Apr. 2016</span></h4>
+                                    <h4><a href="http://insightdatascience.com/" target="_blank">Insight Data Science</a></h4>
+                                    <h4>Palo Alto, CA  </h4>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                    <ul>
+                                        <li> The Insight Data Science Program is an intensive post-doctoral training fellowship bridging the gap between academia and data science.</li>
+                                        <li>At Insight I built TravelSafe.site an app to help tourists and travel companies to find safe destinations.</li>
+                                        <li>I applied a Kernel Density Estimation model to predict the risk level based on news.</li>
+                                        <li>Utilized Python and SQL to parse and analyze news data from the GDELT project.</li>
+                                        <li>Deployed an interactive site using Flask, Javascript and Amazon Web Services.</li>     
+                                    </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 text-right">
+                                        <img style="display: block; margin-left: auto; margin-right: auto;" src="images/berkeley_logo.png" alt="LBNL" width="123" height="105">
+                                    </div>
+                                    <div class="col-lg-9 col-md-9">
+                                    <h4><b>Physicist Posdoctoral Fellow</b><span class="pull-right">Jan. 2013 – Oct. 2015</span></h4>
+                                    <h4><a href="http://www.lbl.gov/" target="_blank">Lawrence Berkeley National Laboratory</a></h4>
+                                    <h4>Berkeley, CA</h4>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                    <ul><br>
+                                        <li>Research activities involve theoretical and experimental studies of scintillation mechanisms inceramics and single crystal inorganic scintillators.</li>
+                                        <li>I have worked with X-ray andspectroscopy, fluorescence and Raman microscopy, and software and instrumentationdevelopment.</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 text-right">
+                                        <img style="display: block; margin-left: auto; margin-right: auto;" src="images/stanford_logo.png" alt="Stanford" width="123" height="123">
+                                    </div>
+                                    <div class="col-lg-9 col-md-9">
+                                      <h4><b>Posdoctoral Research Fellow</b><span class="pull-right">Feb. 2011 – Jan. 2013</span></h4>
+                                      <h4><a href="http://web.stanford.edu/group/scintillators/people.html" target="_blank">Stanford University</a></h4>
+                                      <h4>Stanford, CA</h4>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                    <ul><br>
+                                       <li>Research activities involved the study of light yield non-proportionality in single crystal inorganic scintillator materials and its relationship to crystal structure and chemistry.</li>
+                                       <li>I also conducted gamma-ray spectroscopy to determine the scintillation response of single crystals at low temperature and high pressure studies.</li> 
+                                    </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-12 col-md-12"><br>
-                            <ul>
-                                <li>Developed a comprehensive energy database for Intertek and created a web application with an accessible interface that allows access to the data.</li>
-                                <li>Analyzed large data sets for numerous energy projects including coal, gas and renewable energies.</li>
-                                <li>Developed programs and algorithms that will help make predictions about the impact of renewable energy on fossil fuel plants.</li>
-                            </ul>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 text-right">
-                                <img style="display: block; margin-left: auto; margin-right: auto;" src="images/insight_logo.png" alt="Insight" width="130" height="70">
-                            </div>
-                            <div class="col-lg-9 col-md-9">
-                            <h4><b>Insight Data Science Fellow</b><span class="pull-right">Jan. 2016 – Apr. 2016</span></h4>
-                            <h4><a href="http://insightdatascience.com/" target="_blank">Insight Data Science</a></h4>
-                            <h4>Palo Alto, CA  </h4>
-                            </div>
-                            <div class="col-lg-12 col-md-12">
-                            <ul>
-                                <li> The Insight Data Science Program is an intensive post-doctoral training fellowship bridging the gap between academia and data science.</li>
-                                <li>At Insight I built TravelSafe.site an app to help tourists and travel companies to find safe destinations.</li>
-                                <li>I applied a Kernel Density Estimation model to predict the risk level based on news.</li>
-                                <li>Utilized Python and SQL to parse and analyze news data from the GDELT project.</li>
-                                <li>Deployed an interactive site using Flask, Javascript and Amazon Web Services.</li>     
-                            </ul>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 text-right">
-                                <img style="display: block; margin-left: auto; margin-right: auto;" src="images/berkeley_logo.png" alt="LBNL" width="123" height="105">
-                            </div>
-                            <div class="col-lg-9 col-md-9">
-                            <h4><b>Physicist Posdoctoral Fellow</b><span class="pull-right">Jan. 2013 – Oct. 2015</span></h4>
-                            <h4><a href="http://www.lbl.gov/" target="_blank">Lawrence Berkeley National Laboratory</a></h4>
-                            <h4>Berkeley, CA</h4>
-                            </div>
-                            <div class="col-lg-12 col-md-12">
-                            <ul><br>
-                                <li>Research activities involve theoretical and experimental studies of scintillation mechanisms inceramics and single crystal inorganic scintillators.</li>
-                                <li>I have worked with X-ray andspectroscopy, fluorescence and Raman microscopy, and software and instrumentationdevelopment.</li>
-                            </ul>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 text-right">
-                                <img style="display: block; margin-left: auto; margin-right: auto;" src="images/stanford_logo.png" alt="Stanford" width="123" height="123">
-                            </div>
-                            <div class="col-lg-9 col-md-9">
-                              <h4><b>Posdoctoral Research Fellow</b><span class="pull-right">Feb. 2011 – Jan. 2013</span></h4>
-                              <h4><a href="http://web.stanford.edu/group/scintillators/people.html" target="_blank">Stanford University</a></h4>
-                              <h4>Stanford, CA</h4>
-                            </div>
-                            <div class="col-lg-12 col-md-12">
-                            <ul><br>
-                               <li>Research activities involved the study of light yield non-proportionality in single crystal inorganic scintillator materials and its relationship to crystal structure and chemistry.</li>
-                               <li>I also conducted gamma-ray spectroscopy to determine the scintillation response of single crystals at low temperature and high pressure studies.</li> 
-                            </ul>
-                            </div>
-                        </div>
-                        
                     </div>
                 </div>
+
                 <!--DATA SCIENCE-->
-                <div class="hidden" id="a3">
-                    <div class="popover-heading">Data Science projects and past courses I have taken</div>
-                    <div class="popover-body">    
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 text-left">
-                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Data Science Projects</b></h4></div><br>      
-                                <p>This part refers to another professional side of my career I have been exploring for the past years. This section includes web-design and Data Science Project links. I like the challenges of finding hidden correlations on a large set of data. I believe, my background gives me an advantage on this task and find exciting the benefits that can be extracted from the almost unexplored world of big data. I think, we are at the precise moment where the computational power is big enough to deal with the increasingly acquisition of data. I would be a pity, not to be there to find new applications for this power.</p><br>
+                <div id="a3" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times; </button>
+                                <h4 class="modal-title">Data Science</h4>
+                            </div>
+                            <div class="modal-body">
+               
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 text-left">
+                                        <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Data Science Projects</b></h4></div><br>      
+                                        <p>This part refers to another professional side of my career I have been exploring for the past years. This section includes web-design and Data Science Project links. I like the challenges of finding hidden correlations on a large set of data. I believe, my background gives me an advantage on this task and find exciting the benefits that can be extracted from the almost unexplored world of big data. I think, we are at the precise moment where the computational power is big enough to deal with the increasingly acquisition of data. I would be a pity, not to be there to find new applications for this power.</p><br>
 
-                                <p>For more details please check my Github repository <a href="https://github.com/martingascon/MG_Data_Science_Projects">Data Science Projects</a> and <a href="https://martingascon.shinyapps.io/Supermarket/">Data_challenges</a> and my blog about <a href="http://scintillators.org/datascience/" target="_blank">DATA SCIENCE</a></p>
-                                <hr>
-                                <div class="col-lg-6 col-md-6 text-center"> 
-                                    <a href="https://github.com/martingascon" target="_blank"><img src="images/gh.jpg" alt="" width="165" height="152"></a>
-                                    <p><a href="https://github.com/martingascon" target="_blank">Github</a></p>
+                                        <p>For more details please check my Github repository <a href="https://github.com/martingascon/MG_Data_Science_Projects">Data Science Projects</a> and <a href="https://martingascon.shinyapps.io/Supermarket/">Data_challenges</a> and my blog about <a href="http://scintillators.org/datascience/" target="_blank">DATA SCIENCE</a></p>
+                                        <hr>
+                                        <div class="col-lg-6 col-md-6 text-center"> 
+                                            <a href="https://github.com/martingascon" target="_blank"><img src="images/gh.jpg" alt="" width="165" height="152"></a>
+                                            <p><a href="https://github.com/martingascon" target="_blank">Github</a></p>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 text-center"> 
+                                            <a href="https://medium.com/@martingascon" target="_blank"><img src="images/blog.png" alt="" width="250" height="201"></a>
+                                            <p><a href="https://medium.com/@martingascon" target="_blank">Another Data Science Blog</a></p>
+                                        </div>   
+
+
+                                    </div>
+
                                 </div>
-                                                
-                                <div class="col-lg-6 col-md-6 text-center"> 
-                                    <a href="https://medium.com/@martingascon" target="_blank"><img src="images/blog.png" alt="" width="250" height="201"></a>
-                                    <p><a href="https://medium.com/@martingascon" target="_blank">Another Data Science Blog</a></p>
-                                </div>   
-                        
- 
-                            </div>
-                          
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 text-left">
-                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Side projects</b></h4></div><br>              
-                                <p>As part of my work at Berkeley Lab, I have created a couple of web-pages for a conference and for my group. I also created and maintained two Electronic log servers to keep track of the data and information generated within our group.<br><br></p>
-                            </div>    
-                            <div class="col-lg-6 col-md-6 text-center">  
-                                <p style="text-align: center;">www.scint2015.org</p>
-                                <img src="images/scint.png" alt="" width="400" height="416">
-                            </div> 
-                            <div class="col-lg-6 col-md-6 text-center">
-                                    <p style="text-align: center;">Physics of Luminescence Material's web</p>
-                                    <img src="images/plm.png" alt="" width="400" height="380" style="display: block; margin-left: auto; margin-right: auto;">
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 text-left">
-                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Courses</b></h4></div><br>                   
-                                <p><strong>Courses I have taken in the past</strong></p>
-                                <ul>
-                                <li><p><a href="http://datasciencespecialization.github.io/toolbox/" target="_blank">The Data Scientist’s Toolbox (Johns Hopkins University)</a></p></li>
-                                <li><p><a href="http://datasciencespecialization.github.io/rprog/" target="_blank">R Programming (Johns Hopkins University)</a></p></li>
-                                <li><p><a href="https://www.coursera.org/course/interactivepython1" target="_blank" data-js="course-listing-course-link">An Introduction to Interactive Programming in Python (Part 1) (Rice University)</a></p></li>
-                                <li><p><a href="https://class.coursera.org/interactivepython2-003" target="_blank">An Introduction to Interactive Programming in Python (Part 2) (Rice University)</a></p></li>
-                                <li><p><a href="http://datasciencespecialization.github.io/getclean/" target="_blank">Getting and Cleaning Data(Johns Hopkins University)</a></p></li>
-                                <li><p><a href="http://datasciencespecialization.github.io/eda/" target="_blank">Exploratory Data Analysis(Johns Hopkins University)</a></p></li>
-                                <li><p><a href="http://datasciencespecialization.github.io/repres/">Reproducible Research(Johns Hopkins University)</a></p></li>
-                                <li><p><a href="https://www.coursera.org/course/statinference" target="_blank">Statistical Inference(Johns Hopkins University)</a></p></li>
-                                <li><p><a href="https://www.coursera.org/course/regmods" target="_parent">Regression Models (Johns Hopkins University)</a></p></li>
-                                <li><p><a href="https://www.coursera.org/course/predmachlearn" target="_blank">Practical Machine Learning (Johns Hopkins University)</a></p></li>
-                                <li><p><a href="https://www.coursera.org/course/devdataprod" target="_blank">Developing Data Products (Johns Hopkins University)</a></p></li>
-                                <li><p><a href="https://courses.edx.org/courses/course-v1:MITx+6.00.1x_7+3T2015/info" target="_blank"><span class="provider" style="font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; color: inherit;">MITx:</span>6.00.1x Introduction to Computer Science and Programming Using Python(MIT)</a></p></li>
-                                </ul>
                                 <br>
-                                <p><strong>These courses I am currently enrolled</strong></p>
-                                <ol>
-                                <li><p><a href="https://www.coursera.org/learn/machine-learning/home/welcome" target="_blank">Machine Learning (Stanford Univeristy)</a></p></li>
-                                <li><p><a href="https://courses.edx.org/courses/course-v1:Microsoft+DAT203x+1T2016/info" target="_blank">Data Science and Machine Learning Essentials (Duke University)</a></p></li>
-                                <li><p><a href="https://www.coursera.org/course/statistics" target="_blank">Data Analysis and Statistical Inference (Johns Hopkins University)</a></p></li>
-                                <li><p><a href="https://www.coursera.org/course/stemteaching" data-js="course-nameundefined">An Introduction to Evidence-Based Undergraduate STEM Teaching (Vanderbilt University)</a></p></li>
-                                </ol>
-                            </div>
-                          
-                        </div>
-                        
-                    </div>
-                </div>
-                <!--MY HOBBIES-->
-                <div class="hidden" id="a4">
-                    <div class="popover-heading">My Hobbies</div>  
-                    <div class="popover-body">
-                        <!--BILLIARDS-->
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 text-left">
-                                <p>I have many hobbies, among them are traveling, photography, computing, guitar, and billiards. Here, you will see sample of them.</p><br>
-
-                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Billiards</b></h4></div><br>            
-                                
-                            </div>
-                            <div class="col-lg-6 col-md-6 text-right">
-                                <p>I discovered billards by chance when I was working on my PhD but it quickly grew to be my favorite hobby. My knowledge of classical mechanics was useful in predicting where the ball was going to end up. I started playing regularly and obtained a decent record of achievements.</p>   
-                            </div>
-                           
-                            <div class="col-lg-6 col-md-6 text-left">
-                                <img style="float: left;" src="images/img_1953-1.jpg" alt="Billiards" width="356" height="267">
-                            </div>
-                            
-                            <div class="col-lg-12 col-md-12 text-left">
-                                <hr>
-                                <h4><strong>Achievements</strong></h4><br>
-                            </div>
-                            <div class="col-lg-6 col-md-6 text-right">
-                              <img style="display: block;" src="images/IMG_20150323_201201910-X3.jpg" alt="" width="400" height="193">
-                            </div>    
-                            <div class="col-lg-3 col-md-3 text-left">   
-                              <img style="float: left;" src="images/9ball_MVP.jpg" alt="" width="149" height="199">
-                              
-                            </div>
-                            <div class="col-lg-3 col-md-3 text-left">   
-                               <img style="float: left;" src="images/IMG_20150401_214423298-X2.jpg" alt="" width="196" height="199"> 
-                            </div>
-                            <div class="col-lg-6 col-md-6 text-left">   
-                                <h3>2008</h3>
-                                <ul>
-                                    <li><p>Local Tournament: 2th Position (out of 6)</p></li>
-                                    <li><p>Qualified forregional championship</p></li>
-                                    <li><p>Qualified to Single National Tournament. Benalmadena (Spain)</p></li>
-                                </ul>
-                                <h3>2009</h3>
-                                <ul>
-                                    <li><p>Local Tournament: 10th Position (out of 20)</p></li>
-                                    <li><p>Regional Tournament: 14th Position (out of 57)</p></li>
-                                </ul>
-                                <h3>2010</h3>
-                                <ul>
-                                    <li><p>Local Tournament: 2nd Position (out of 20)</p></li>
-                                    <li><p>Regional Tournament: 9th Position (out of 65)</p></li>
-                                    <li><p>Qualified to Nationals. Lugo 2010 (Spain)</p></li>
-                                </ul>
-                                <h3>2011</h3>
-                                <ul>
-                                    <li><p>8-Ball Team. 1st Place. Fall Session (Mountain View)</p></li>
-                                </ul>
-                                <h3>2012</h3>
-                                <ul>
-                                    <li><p>8-Ball Team. 2nd Place. Spring Session. (Mountain View)</p></li>
-                                    <li><p>8-Ball Team. 2nd Place. Summer Session.</p></li>
-                                    <li><p>8-Ball Regional Singles Qualifiers: 1st Place.</p></li>
-                                    <li><p>Qualified to play APA 8-ball National Singles Championship in Las Vegas (April 2012)</p></li>
-                                </ul>
-                                
-                            </div>
-                            <div class="col-lg-6 col-md-6 text-left">   
-                                <h3>2014</h3>
-                                <ul>
-                                    <li><p>9-Ball 1st. Place Top Gun Tournament. Fall Session (San Francisco)</p></li>
-                                    <li><p>8-Ball Team Division Team Champion. Summer Session</p></li>
-                                    <li><p>8-Ball Team Division Champions. Fall Session</p></li>
-                                    <li><p>9-Ball Team Division Champion. Fall Session</p></li>
-                                    <li><p>Qualfied for Fall 2014 9-Ball Tri-Cup</p></li>
-                                    <li><p>Qualified for Summer 2014 8-Ball Tri-Cup Tournament</p></li>
-                                    <li><p>Qualified for Spring 2014 8-Ball Tri Cup</p></li>
-                                   
-                                </ul>
-                                <h3>2015</h3>
-                                <ul>
-                                    <li><p>8-Ball Team Division Champions. Spring Session</p></li>
-                                    <li><p>Qualified for 2015 8-Ball City Championship (San Francisco)</p></li>
-                                    <li><p>Qualified for 2015 9-Ball City Championship</p></li>
-                                    <li><p>Qualified for Spring 2015 8-Ball Tri Cup (San Francisco)</p></li>
-                                    <li><p>Qualified for Spring 2015 9-Ball Tri Cup</p></li>
-                                </ul>
-                                <h3>2016</h3>
-                                <ul>
-                                    <li><p>8-Ball Team. 2nd Place. Summer Session.</p></li>
-                                </ul>
-                                
-                                
-                            </div>
-                            
-                        </div> 
-                        <!--PHOTOGRAPHY-->
-                        <br>
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 text-left">
-                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Photography</b></h4></div><br>              	
-                            </div>    
-                            <div class="col-lg-6 col-md-6 text-right">            
-                                <p>Photography is a passion of mine, I like to photograph mostly nature and a little bit of science.</p>	
-                            </div>    
-                            <div class="col-lg-6 col-md-6 text-left">  
-                                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000" id="bs-carousel">
-                                <!-- Overlay -->
-                                <div class="overlay"></div>
-
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                                    <li data-target="#myCarousel" data-slide-to="5"></li>
-                                    <li data-target="#myCarousel" data-slide-to="6"></li>
-                                </ol>
-	
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                        <img src="images/photo/IMG_0389.JPG" alt="photo">
-                                    </div>
-                                    <div class="item">
-                                        <img src="images/photo/IMG_2532.JPG" alt="photo">
-                                    </div>
-                                    <div class="item">
-                                        <img src="images/photo/Dresden-114.jpg" alt="photo">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 text-left">
+                                        <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Side projects</b></h4></div><br>              
+                                        <p>As part of my work at Berkeley Lab, I have created a couple of web-pages for a conference and for my group. I also created and maintained two Electronic log servers to keep track of the data and information generated within our group.<br><br></p>
+                                    </div>    
+                                    <div class="col-lg-6 col-md-6 text-center">  
+                                        <p style="text-align: center;">www.scint2015.org</p>
+                                        <img src="images/scint.png" alt="" width="400" height="416">
                                     </div> 
-                                    <div class="item">
-                                        <img src="images/photo/IMG_2895.JPG" alt="photo">
-                                    </div> 
-                                    <div class="item">
-                                        <img src="images/photo/img_4603.jpg" alt="photo">
-                                    </div> 
-                                    <div class="item">
-                                        <img src="images/photo/img_4605.jpg" alt="photo">
-                                    </div> 
-                                    <div class="item">
-                                        <img src="images/photo/img_4610.jpg" alt="photo">
+                                    <div class="col-lg-6 col-md-6 text-center">
+                                            <p style="text-align: center;">Physics of Luminescence Material's web</p>
+                                            <img src="images/plm.png" alt="" width="400" height="380" style="display: block; margin-left: auto; margin-right: auto;">
                                     </div>
-            
-                                    <!--<div class="item">
-                                        <img src="../static/img/carousel/Map_search.png" alt="Map_search">
-                                        <div class="carousel-caption">
-                                            <hgroup>
-                                            <h1>INGRID</h1>
-                                            <h3> is an integrated solution that allows </h3>
-                                            <h3> power generation stakeholders to </h3>
-                                            <h3> efficiently analyze very large </h3>
-                                            <h3> power generation performance datasets </h3>
-                                            <br><br><br>
-                                            </hgroup>
-                                        </div>
-                                    </div>
-    
-                                    <div class="item">
-                                        <img src="../static/img/carousel/Data_output_bw.png" alt="Data Output">
-                                        <div class="carousel-caption">
-                                            <hgroup>
-                                            <h3> The cloud based platform provides </h3>
-                                            <h3> accurate information and has an easy-to-use </h3>
-                                            <h3> query tool with interactive output grids </h3>
-                                            <h3> charting and mapping capabilities </h3>
-                                            <br><br><br><br>
-                                            </hgroup>
-                                        </div>
-                                    </div>-->
-                                    </div>
-
-                                <!-- Left and right controls -->
-                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
                                 </div>
-                                
-                                
-                                <!--<img src="images/IMG_0389.JPG" alt="" width="400" height="243">-->
-                            </div> 
-                           
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 text-left">
-                                <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Traveling</b></h4></div><br>                           
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 text-left">
+                                        <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Courses</b></h4></div><br>                   
+                                        <p><strong>Courses I have taken in the past</strong></p>
+                                        <ul>
+                                        <li><p><a href="http://datasciencespecialization.github.io/toolbox/" target="_blank">The Data Scientist’s Toolbox (Johns Hopkins University)</a></p></li>
+                                        <li><p><a href="http://datasciencespecialization.github.io/rprog/" target="_blank">R Programming (Johns Hopkins University)</a></p></li>
+                                        <li><p><a href="https://www.coursera.org/course/interactivepython1" target="_blank" data-js="course-listing-course-link">An Introduction to Interactive Programming in Python (Part 1) (Rice University)</a></p></li>
+                                        <li><p><a href="https://class.coursera.org/interactivepython2-003" target="_blank">An Introduction to Interactive Programming in Python (Part 2) (Rice University)</a></p></li>
+                                        <li><p><a href="http://datasciencespecialization.github.io/getclean/" target="_blank">Getting and Cleaning Data(Johns Hopkins University)</a></p></li>
+                                        <li><p><a href="http://datasciencespecialization.github.io/eda/" target="_blank">Exploratory Data Analysis(Johns Hopkins University)</a></p></li>
+                                        <li><p><a href="http://datasciencespecialization.github.io/repres/">Reproducible Research(Johns Hopkins University)</a></p></li>
+                                        <li><p><a href="https://www.coursera.org/course/statinference" target="_blank">Statistical Inference(Johns Hopkins University)</a></p></li>
+                                        <li><p><a href="https://www.coursera.org/course/regmods" target="_parent">Regression Models (Johns Hopkins University)</a></p></li>
+                                        <li><p><a href="https://www.coursera.org/course/predmachlearn" target="_blank">Practical Machine Learning (Johns Hopkins University)</a></p></li>
+                                        <li><p><a href="https://www.coursera.org/course/devdataprod" target="_blank">Developing Data Products (Johns Hopkins University)</a></p></li>
+                                        <li><p><a href="https://courses.edx.org/courses/course-v1:MITx+6.00.1x_7+3T2015/info" target="_blank"><span class="provider" style="font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; color: inherit;">MITx:</span>6.00.1x Introduction to Computer Science and Programming Using Python(MIT)</a></p></li>
+                                        </ul>
+                                        <br>
+                                        <p><strong>These courses I am currently enrolled</strong></p>
+                                        <ol>
+                                        <li><p><a href="https://www.coursera.org/learn/machine-learning/home/welcome" target="_blank">Machine Learning (Stanford Univeristy)</a></p></li>
+                                        <li><p><a href="https://courses.edx.org/courses/course-v1:Microsoft+DAT203x+1T2016/info" target="_blank">Data Science and Machine Learning Essentials (Duke University)</a></p></li>
+                                        <li><p><a href="https://www.coursera.org/course/statistics" target="_blank">Data Analysis and Statistical Inference (Johns Hopkins University)</a></p></li>
+                                        <li><p><a href="https://www.coursera.org/course/stemteaching" data-js="course-nameundefined">An Introduction to Evidence-Based Undergraduate STEM Teaching (Vanderbilt University)</a></p></li>
+                                        </ol>
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 text-right">                 
-                                <p>I love traveling. Since I left Argentina more than 20 years ago, I have visited more than 20 countries and have lived in Spain and Germany. For the last five years I have been residing in the United States.</p>                        
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
-                            <div class="col-lg-6 col-md-6 text-left">  
-                               <img src="images/Amsterdam2.jpg" alt="" width="400" height="335">
-                            </div> 
                         </div>
-                        
                     </div>
                 </div>
+               
+                <!--Publications, Conferences, PhD thesis, Experiments, etc. -->
+                <div id="a4" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times; </button>
+                                <h4 class="modal-title">My Hobbies</h4>
+                            </div>
+                            <div class="modal-body">
+ 
+                                <!--BILLIARDS-->
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 text-left">
+                                        <p>I have many hobbies, among them are traveling, photography, computing, guitar, and billiards. Here, you will see sample of them.</p><br>
+
+                                        <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Billiards</b></h4></div><br>            
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 text-right">
+                                        <p>I discovered billards by chance when I was working on my PhD but it quickly grew to be my favorite hobby. My knowledge of classical mechanics was useful in predicting where the ball was going to end up. I started playing regularly and obtained a decent record of achievements.</p>   
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 text-left">
+                                        <img style="float: left;" src="images/img_1953-1.jpg" alt="Billiards" width="356" height="267">
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 text-left">
+                                        <hr>
+                                        <h4><strong>Achievements</strong></h4><br>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 text-right">
+                                      <img style="display: block;" src="images/IMG_20150323_201201910-X3.jpg" alt="" width="400" height="193">
+                                    </div>    
+                                    <div class="col-lg-3 col-md-3 text-left">   
+                                      <img style="float: left;" src="images/9ball_MVP.jpg" alt="" width="149" height="199">
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 text-left">   
+                                       <img style="float: left;" src="images/IMG_20150401_214423298-X2.jpg" alt="" width="196" height="199"> 
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 text-left">   
+                                        <h3>2008</h3>
+                                        <ul>
+                                            <li><p>Local Tournament: 2th Position (out of 6)</p></li>
+                                            <li><p>Qualified forregional championship</p></li>
+                                            <li><p>Qualified to Single National Tournament. Benalmadena (Spain)</p></li>
+                                        </ul>
+                                        <h3>2009</h3>
+                                        <ul>
+                                            <li><p>Local Tournament: 10th Position (out of 20)</p></li>
+                                            <li><p>Regional Tournament: 14th Position (out of 57)</p></li>
+                                        </ul>
+                                        <h3>2010</h3>
+                                        <ul>
+                                            <li><p>Local Tournament: 2nd Position (out of 20)</p></li>
+                                            <li><p>Regional Tournament: 9th Position (out of 65)</p></li>
+                                            <li><p>Qualified to Nationals. Lugo 2010 (Spain)</p></li>
+                                        </ul>
+                                        <h3>2011</h3>
+                                        <ul>
+                                            <li><p>8-Ball Team. 1st Place. Fall Session (Mountain View)</p></li>
+                                        </ul>
+                                        <h3>2012</h3>
+                                        <ul>
+                                            <li><p>8-Ball Team. 2nd Place. Spring Session. (Mountain View)</p></li>
+                                            <li><p>8-Ball Team. 2nd Place. Summer Session.</p></li>
+                                            <li><p>8-Ball Regional Singles Qualifiers: 1st Place.</p></li>
+                                            <li><p>Qualified to play APA 8-ball National Singles Championship in Las Vegas (April 2012)</p></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 text-left">   
+                                        <h3>2014</h3>
+                                        <ul>
+                                            <li><p>9-Ball 1st. Place Top Gun Tournament. Fall Session (San Francisco)</p></li>
+                                            <li><p>8-Ball Team Division Team Champion. Summer Session</p></li>
+                                            <li><p>8-Ball Team Division Champions. Fall Session</p></li>
+                                            <li><p>9-Ball Team Division Champion. Fall Session</p></li>
+                                            <li><p>Qualfied for Fall 2014 9-Ball Tri-Cup</p></li>
+                                            <li><p>Qualified for Summer 2014 8-Ball Tri-Cup Tournament</p></li>
+                                            <li><p>Qualified for Spring 2014 8-Ball Tri Cup</p></li>
+
+                                        </ul>
+                                        <h3>2015</h3>
+                                        <ul>
+                                            <li><p>8-Ball Team Division Champions. Spring Session</p></li>
+                                            <li><p>Qualified for 2015 8-Ball City Championship (San Francisco)</p></li>
+                                            <li><p>Qualified for 2015 9-Ball City Championship</p></li>
+                                            <li><p>Qualified for Spring 2015 8-Ball Tri Cup (San Francisco)</p></li>
+                                            <li><p>Qualified for Spring 2015 9-Ball Tri Cup</p></li>
+                                        </ul>
+                                        <h3>2016</h3>
+                                        <ul>
+                                            <li><p>8-Ball Team. 2nd Place. Summer Session.</p></li>
+                                        </ul>
+
+
+                                    </div>
+
+                                </div> 
+                                <!--PHOTOGRAPHY-->
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 text-left">
+                                        <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Photography</b></h4></div><br>              	
+                                    </div>    
+                                    <div class="col-lg-6 col-md-6 text-right">            
+                                        <p>Photography is a passion of mine, I like to photograph mostly nature and a little bit of science.</p>	
+                                    </div>    
+                                    <div class="col-lg-6 col-md-6 text-left">  
+                                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000" id="bs-carousel">
+                                        <!-- Overlay -->
+                                        <div class="overlay"></div>
+
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                                            <li data-target="#myCarousel" data-slide-to="6"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="images/photo/IMG_0389.JPG" alt="photo">
+                                            </div>
+                                            <div class="item">
+                                                <img src="images/photo/IMG_2532.JPG" alt="photo">
+                                            </div>
+                                            <div class="item">
+                                                <img src="images/photo/Dresden-114.jpg" alt="photo">
+                                            </div> 
+                                            <div class="item">
+                                                <img src="images/photo/IMG_2895.JPG" alt="photo">
+                                            </div> 
+                                            <div class="item">
+                                                <img src="images/photo/img_4603.jpg" alt="photo">
+                                            </div> 
+                                            <div class="item">
+                                                <img src="images/photo/img_4605.jpg" alt="photo">
+                                            </div> 
+                                            <div class="item">
+                                                <img src="images/photo/img_4610.jpg" alt="photo">
+                                            </div>
+
+                                            <!--<div class="item">
+                                                <img src="../static/img/carousel/Map_search.png" alt="Map_search">
+                                                <div class="carousel-caption">
+                                                    <hgroup>
+                                                    <h1>INGRID</h1>
+                                                    <h3> is an integrated solution that allows </h3>
+                                                    <h3> power generation stakeholders to </h3>
+                                                    <h3> efficiently analyze very large </h3>
+                                                    <h3> power generation performance datasets </h3>
+                                                    <br><br><br>
+                                                    </hgroup>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <img src="../static/img/carousel/Data_output_bw.png" alt="Data Output">
+                                                <div class="carousel-caption">
+                                                    <hgroup>
+                                                    <h3> The cloud based platform provides </h3>
+                                                    <h3> accurate information and has an easy-to-use </h3>
+                                                    <h3> query tool with interactive output grids </h3>
+                                                    <h3> charting and mapping capabilities </h3>
+                                                    <br><br><br><br>
+                                                    </hgroup>
+                                                </div>
+                                            </div>-->
+                                            </div>
+
+                                        <!-- Left and right controls -->
+                                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                        </div>
+
+
+                                        <!--<img src="images/IMG_0389.JPG" alt="" width="400" height="243">-->
+                                    </div> 
+
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 text-left">
+                                        <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Traveling</b></h4></div><br>                           
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 text-right">                 
+                                        <p>I love traveling. Since I left Argentina more than 20 years ago, I have visited more than 20 countries and have lived in Spain and Germany. For the last five years I have been residing in the United States.</p>                        
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 text-left">  
+                                       <img src="images/Amsterdam2.jpg" alt="" width="400" height="335">
+                                    </div> 
+                                </div>
+                        
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
                 <!--TEACHING/HONORS/AWARDS-->
-                <div class="hidden" id="a5">
-                    <div class="popover-heading">Teaching, Honors and Awards </div>  
-                    <div class="popover-body">
-                        <div class="row">
+                <div id="a5" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times; </button>
+                                <h4 class="modal-title">Teaching, Honors and Awards</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
                             <div class="col-lg-12 col-md-12 text-left">   
                                 <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Teaching</b></h4></div><br>
                             </div>
@@ -680,7 +725,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="row">
+                                <div class="row">
                             <div class="col-lg-12 col-md-12 text-left">
                                 <div class="list-group-item list-group-item-danger"; style ='background-color: #DCDCDC;' paddind="2px"><h4><b>Honors and Awards</b></h4></div>
                                 <ul><br>
@@ -691,13 +736,25 @@
                                 </ul>
                             </div>
                         </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
-               </div>
+                </div>
+                                
                 <!--PUBLICATIONS-->
-                <div class="hidden" id="a6">
-                    <div class="popover-heading">Publications, Conferences, PhD thesis, Experiments, etc. </div>
-                    <div class="popover-body">
-                        <div class="row">
+                <div id="a6" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times; </button>
+                                <h4 class="modal-title">Publications, Conferences, PhD thesis, Experiments, etc. </h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="row">
                             <div class="col-lg-12 col-md-12">
                             <p> In this section you will find my peer-review publications, conferences, a brief description of my PhD thesis, participation in Nuclear Physics experiments and visits to european scientific institutions.</p><br>
                             </div>
@@ -955,13 +1012,25 @@
                                 </div>
                             </div> 
                         </div>                       
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
-               </div>
+                </div>         
+                                
                 <!--VOLUNTEERING-->
-                <div class="hidden" id="a7">
-                    <div class="popover-heading">Volunteering</div>  
-                    <div class="popover-body">        
-                        <div class="row">
+                <div id="a7" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times; </button>
+                                <h4 class="modal-title">Volunteering</h4>
+                            </div>
+                            <div class="modal-body">                
+                                
+                                <div class="row">
                             <div class="col-lg-12 col-md-12 text-left">
                                <ul>
                                     <li><p>Founding member of the Association for the Social Promotion of the Space Research and Development (APSIDE). <br><a href="http://sseti.unizar.es/web/nosotros.html" target="_blank">http://sseti.unizar.es/web/nosotros.html</a></p></li><br>
@@ -977,16 +1046,26 @@
                                 </ul> 
                             </div>  
                         </div> 
-                        
-                    
-                        
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+  
                 <!--IN MEDIA-->
-                <div class="hidden" id="a8">
-                    <div class="popover-heading">In Media</div>  
-                    <div class="popover-body">
-                        <div class="row">
+                <div id="a8" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times; </button>
+                                <h4 class="modal-title">In Media</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="row">
                             <div class="col-lg-12 col-md-12 text-left">
                                <table style="height: 1060px;" width="900">
                                     <tbody>
@@ -1024,143 +1103,48 @@
                                
                             </div>  
                         </div> 
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+               
             </div>
+            
+
         </div>
     </section>
 
-    <section class="no-padding" id="myfuture">
-        <!--<div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://ingrid.intertek.com" target="_blank" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Data Science Contributions
-                                </div>
-                                <div class="project-name">
-                                    INGRID
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="images/Travel/Amsterdam2.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Hobby
-                                </div>
-                                <div class="project-name">
-                                    Travel
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>-->
-    </section>
+    
+        
 
-    <!--<aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
-            </div>
+   <!-- Contact Section -->
+  <section class="bg-dark page-section" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-1">Let's Get In Touch!</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5">Any comments? Suggestions? job offer? That's great! Friend me in Linkedin or send me an email and I will get back to you as soon as possible!</p>
         </div>
-    </aside>-->
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Any comments? Suggestions? job offer? That's great! Friend me in Linkedin or send me an email and I will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-linkedin fa-3x sr-contact"></i>
-                    <p><a href="http://linkedin.com/in/martingascon">linkedin.com/io/martingascon</a></p>
-                    <p></p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:martin.gascon_AT_gmail.com">martin.gascon gmail.com</a></p>
-                </div>
+      </div>
+      <div class="row justify-content-center">
+            <div class="col-lg-4 text-center">
+                  <p><a href="http://linkedin.com/in/martingascon">linkedin.com/io/martingascon</a></p>
             </div>
-        </div>
-    </section>
+            <div class="col-lg-4 text-center">
+                  <p><a href="mailto:martin.gascon_AT_gmail.com">martin.gascon (at) gmail.com</a></p>
+            </div>
+      </div>
+    </div>
+  </section>
+    
+    
+    
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-  <!-- Bootstrap core JavaScript -->
+ <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
