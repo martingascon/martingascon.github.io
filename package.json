@@ -31,13 +31,17 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.13.0",
         "bootstrap": "4.4.1",
+        "debug": "^4.3.1",
         "http-proxy": "^1.18.1",
         "jquery": "^3.5.1",
         "jquery.easing": "^1.4.1",
-        "magnific-popup": "^1.1.0"
+        "magnific-popup": "^1.1.0",
+        "popper.js": "^1.16.1",
+        "y18n": "^5.0.8",
+        "yeast": "^0.1.2"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.12",
+        "browser-sync": "^2.26.14",
         "del": "5.1.0",
         "gulp": "4.0.2",
         "gulp-autoprefixer": "7.0.1",
